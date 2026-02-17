@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <br>
+
+            <label for="fname">Full Name</label>
+            <input type="text" placeholder="Enter your fullname" id="fname" name="fname">
+
+            <br>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="example@email.com">
+            <br>
+
+            <label for="gender">Gender</label>
+            <br>
+            <input type="radio" name="gender" id="gender-male" value="male" checked>
+            <label for="gender-male">Male</label>
+            
+            <input type="radio" name="gender" id="gender-female" value="female">
+            <label for="gender-female">Female</label>
+
+        </fieldset>
+
+        <br>
+
+        <label for="framework">Choose your framework</label>
+        <select name="framework" id="framework">
+            <option value="">Select</option>
+            <option value="react">React</option>
+            <option value="vue">Vue</option>
+            <option value="angular" selected>Angular</option>
+        </select>
+
+        <br>
+
+        <label for="skills">Tools you work with</label>
+        <br>
+        <input type="checkbox" name="skills" value="html" id="html" checked>
+        <label for="html">HTML</label>
+        <input type="checkbox" name="skills" id="css">
+        <label for="css">CSS</label>
+        <br>
+
+        <label for="comment">Comment</label><br>
+        <textarea name="comment" id="comment" rows=""  cols="" placeholder="Your comment here..."></textarea>
+
+        
+        
+
+    </form>
+    
+</body>
+</html>
