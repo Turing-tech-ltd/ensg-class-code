@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables</title>
+
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 4rem 0;
+        }
+
+        thead {
+            background-color: green;
+            color: white;
+        }
+
+        th,td {
+            border: 1px solid #f5f5f5;
+            padding: 10px 5px;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #d0d0d0;
+        }
+
+        tfoot {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- Basic Structure -->
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Location</th>
+        </tr>
+
+        <tr>
+            <td>John Doe</td>
+            <td>john@email.com</td>
+            <td>Austria</td>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>john@email.com</td>
+            <td>Austria</td>
+        </tr>
+    </table>
+    
+
+    <!-- thead, tbody, tfoot -->
+    <table class="first-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>john@email.com</td>
+                <td>Austria</td>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>john@email.com</td>
+                <td>Austria</td>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>john@email.com</td>
+                <td>Austria</td>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>john@email.com</td>
+                <td>Austria</td>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>john@email.com</td>
+                <td>Austria</td>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>john@email.com</td>
+                <td>Austria</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td>6</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Alice May</td>
+                <td>Nigeria</td>
+            </tr>
+
+            <tr>
+                <td>Alice May</td>
+                <td>Nigeria</td>
+            </tr>
+        </tbody>
+    </table> -->
+
+    <table>
+        <caption>Table of Students Subjects</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Subjects</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="3">Max Andrews</td>
+                <td>Maths</td>
+            </tr>
+
+            <tr>
+                <td>English</td>
+            </tr>
+            <tr>
+                <td>Further-Maths</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+</body>
+</html>

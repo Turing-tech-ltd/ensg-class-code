@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form & Input Elements</title>
+</head>
+<body>
+
+    <form>
+
+        <label for="fullname">Fullname</label>
+        <input 
+            type="text" 
+            placeholder="First Last" 
+            id="fullname"
+        > 
+        <br>
+
+        <label for="email">Email</label>
+        <input 
+            type="email" 
+            placeholder="john@example.com"
+            id="email"
+        >
+        <br>
+
+        <label for="password">Password</label>
+        <input 
+            type="password" 
+            id="password" 
+            placeholder="Atleast 6 characters"
+        >
+        <br>
+        <label for="age">Age</label>
+        <input 
+            type="number" 
+            placeholder="Enter your age" 
+            id="age"
+        >
+        <br>
+
+        <label for="date-of-birth">Date of birth</label>
+        <input 
+            type="date" 
+            id="date-of-birth"
+        >
+        <br>
+        <label for="datetime">Meeting Time</label>
+        <input 
+            type="datetime-local" 
+            id="datetime"
+        >
+        <br>
+
+        <label for="framework">Preferred framework</label>
+        <select id="framework">
+            <option value="">Select an option</option>
+            <option value="react">React</option>
+            <option value="vue">Vue</option>
+            <option value="angular">Angular</option>
+        </select>
+        <br>
+
+        <label>Gender</label> <br>
+
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label>
+
+        <!-- An alternative approach -->
+        <label>
+            <input type="radio" name="gender">
+            Other
+        </label>
+
+        <br>
+
+        <label for="skills">Technical Skills</label>
+        <br>
+        <input 
+            type="checkbox" 
+            name="skills" 
+            id="html"
+        >
+        <label for="html">HTML</label>
+
+        <input 
+            type="checkbox" 
+            name="skills" 
+            id="css"
+        >
+        <label for="css">CSS</label>
+
+        <input 
+            type="checkbox" 
+            name="skills" 
+            id="javascript"
+        >
+        <label for="javascript">JavaScript</label>
+
+        <!-- An alternative approach -->
+         <label>
+            <input type="checkbox" name="skills">
+            React
+         </label>
+
+    </form>
+    
+</body>
+</html>
