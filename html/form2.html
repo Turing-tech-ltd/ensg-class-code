@@ -12,21 +12,27 @@
             <legend>Personal Information</legend>
             <br>
 
-            <label for="fname">Full Name</label>
-            <input type="text" placeholder="Enter your fullname" id="fname" name="fname">
+            <label for="fname">
+                Full Name 
+                <span>*</span>
+            </label>
+            <input type="text" placeholder="Enter your fullname" id="fname" name="fname" minlength="5" maxlength="10" required>
 
             <br>
 
             <label for="email">Email</label>
             <input type="email" name="email" id="email" placeholder="example@email.com">
             <br>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" min="18" max="40">
+            <br>
 
             <label for="gender">Gender</label>
             <br>
-            <input type="radio" name="gender" id="gender-male" value="male" checked>
+            <input type="radio" name="gender" id="gender-male" value="male" required>
             <label for="gender-male">Male</label>
             
-            <input type="radio" name="gender" id="gender-female" value="female">
+            <input type="radio" name="gender" id="gender-female" value="female" required>
             <label for="gender-female">Female</label>
 
         </fieldset>
@@ -52,9 +58,23 @@
         <br>
 
         <label for="comment">Comment</label><br>
-        <textarea name="comment" id="comment" rows=""  cols="" placeholder="Your comment here..."></textarea>
+        <textarea name="comment" id="comment" rows=""  cols="" minlength="10" maxlength="15" placeholder="Your comment here..."></textarea>
+        <br>
 
-        
+        <!-- Modern Approach -->
+         <button type="submit">
+            Submit
+         </button>
+
+         <button type="reset">
+            Reset
+         </button>
+         <br>
+
+         <!-- Old Approach -->
+        <input type="button" value="Click Here">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
         
 
     </form>
